@@ -1,0 +1,79 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+<style>
+#p3 {background-color:rgba(0,0,255,0.3);}
+</style>
+<body id="p3">
+<p id="p3">
+<form action="https://infovision3--sandboxec.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" id="p3">
+<style>
+.myDiv {
+background-color: lightblue;
+text-align: center;
+}
+
+div.absolute{
+  position: absolute;
+  top: 250px;
+  right: 100px;
+  left: 500px;
+  bottom: 100px;
+  width: 200px;
+  height: 100px;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+</style>
+
+<img src="InfoVision.jpg" alt="InfoVision Logo" width="100" height="100">
+<header>
+<h1>Health Cloud</h1>
+</header>
+<input type=hidden name="orgid" value="00D9D0000000SeU">
+<input type=hidden name="retURL" value="">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="ashwini.kumar@infovision.com">                                   -->
+<!--  ----------------------------------------------------------------------  -->
+<div class="absolute">
+<fieldset style="background-color: blue;">
+<label for="name">Contact Name:</label><br><input id="name" maxlength="80" name="name" size="20" type="text" class="myDiv" /><br>
+
+<label for="email">Email:</label><br><input id="email" maxlength="80" name="email" size="20" type="text" class="myDiv" /><br>
+
+<label for="phone">Phone:</label><br><input id="phone" maxlength="40" name="phone" size="20" type="text" class="myDiv"/><br>
+
+<label for="subject">Subject:</label><br><input id="subject" maxlength="80" name="subject" size="20" type="text"class="myDiv" /><br>
+
+<label for="description">Description:</label><br><textarea name="description" class="myDiv"></textarea><br>
+
+<input type="hidden" id="external" name="external" value="1" /><br>
+
+<input type="submit" name="register" label="Register" class="button" value="Register">
+</fieldset>
+</div>
+
+</form>
+</body>
+</p>
